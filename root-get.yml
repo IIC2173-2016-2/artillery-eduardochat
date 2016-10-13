@@ -1,0 +1,16 @@
+# https://artillery.io/docs/testing_http.html
+{
+  "config": {
+      "target": "http://assw9.ing.puc.cl",
+      "phases": [
+        { "duration": 60, "arrivalRate": 20 }
+      ]
+  },
+  "scenarios": [
+    {
+      "flow": [
+        { "get": {"url": "/"}}
+      ]
+    }
+  ]
+}
